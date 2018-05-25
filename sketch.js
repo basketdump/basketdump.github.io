@@ -33,16 +33,18 @@ function draw()
     }
 }
 
-function mouseClicked() {
-    if (distance(mouseX, mouseY, ball.x, ball.y) < ball.radius/2)
-    {
-        score.score += 1;
-    }
-    else
-    {
-        if (score.score > 0)
+function keyTyped() {
+    if (key === 'z'){
+        if (distance(mouseX, mouseY, ball.x, ball.y) < ball.radius/2)
         {
-            score.score -= 1;
+            score.score += 1;
+        }
+        else
+        {
+            if (score.score > 0)
+            {
+                score.score -= 1;
+            }
         }
     }
 }

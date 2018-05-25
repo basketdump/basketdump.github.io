@@ -15,8 +15,8 @@ function draw()
     background(100);
     if (score.score < 10)
     {
-        ball.x += random(-5, 0);
-        ball.y += random(-5, 0);
+        ball.x += random(-5, 5);
+        ball.y += random(-5, 5);
         if (ball.x > 1270)
         {
             ball.x = 1270;

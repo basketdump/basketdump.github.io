@@ -38,7 +38,7 @@ function draw()
         textSize(28);
         textAlign(CENTER);
         fill(255);
-        text("Good Luck Kiddo", width/2, 30);
+        text("-Good Luck Kiddo-", width/2, 30);
     }
     else
     {

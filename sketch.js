@@ -15,8 +15,24 @@ function draw()
     background(100);
     if (score.score < 10)
     {
-        ball.x += random(-5, 5);
-        ball.y += random(-5, 5);
+        ball.x += random(-5, 0);
+        ball.y += random(-5, 0);
+        if (ball.x > 1270)
+        {
+            ball.x = 1270;
+        }
+        else if (ball.x < 10)
+        {
+            ball.x = 10;
+        }
+        if (ball.y > 710)
+        {
+            ball.y = 710;
+        }
+        else if (ball.y < 10)
+        {
+            ball.y = 10;
+        }
         ball.draw();
         score.draw();
         textSize(28);
